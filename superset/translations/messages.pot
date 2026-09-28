@@ -6563,6 +6563,10 @@ msgstr ""
 msgid "Extensions are not enabled on this server"
 msgstr ""
 
+#, python-format
+msgid "Extensions failed to load: %s"
+msgstr ""
+
 msgid "Extent"
 msgstr ""
 
@@ -11617,6 +11621,9 @@ msgstr ""
 msgid "SQL"
 msgstr ""
 
+msgid "SQL Editor"
+msgstr ""
+
 msgid "SQL Lab"
 msgstr ""
 
@@ -13023,6 +13030,10 @@ msgid "Some charts did not finish loading. The export may be incomplete."
 msgstr ""
 
 msgid "Some existing alerts/reports conflict with the new configuration. Please update them first."
+msgstr ""
+
+#, python-format
+msgid "Some extensions failed to load: %s"
 msgstr ""
 
 msgid "Some features require a larger screen. Try viewing dashboards for the best mobile experience."
