@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: ted.korostiled@gmail.com\n"
-"POT-Creation-Date: 2026-10-26 12:43+0300\n"
+"POT-Creation-Date: 2026-10-26 13:08+0200\n"
 "PO-Revision-Date: 2026-04-30 22:04+0300\n"
 "Last-Translator: Danylo Korostil\n"
 "Language: uk\n"
@@ -10530,6 +10530,9 @@ msgstr "Тільки переміщення"
 msgid "Move only"
 msgstr "Тільки переміщення"
 
+msgid "Move widget"
+msgstr ""
+
 #, python-format
 msgid "Moved %s '%s'"
 msgstr ""
@@ -11942,6 +11945,9 @@ msgstr ""
 msgid "Plain"
 msgstr "Простий"
 
+msgid "Plan mode"
+msgstr ""
+
 msgid ""
 "Please check your query and confirm that all template parameters are "
 "surround by double braces, for example, \"{{ ds }}\". Then, try running "
@@ -12959,6 +12965,10 @@ msgstr ""
 msgid "Resize"
 msgstr "Змінити розмір"
 
+#, python-format
+msgid "Resize widget from the %s corner"
+msgstr ""
+
 msgid "Resource already has an attached report."
 msgstr "Ресурс уже долучено до доповіді."
 
@@ -13536,6 +13546,9 @@ msgid ""
 "Display titles cannot be recovered automatically. For API requests, "
 "select current member IDs and supply semantic_selection_version from "
 "datasource metadata or MCP list_metrics."
+msgstr ""
+
+msgid "Saving your changes…"
 msgstr ""
 
 msgid "Saving..."
@@ -15895,6 +15908,12 @@ msgstr "Вирівнювання тексту"
 msgid "Text embedded in email"
 msgstr "Текст, долучений до листа"
 
+msgid "That change could not be saved."
+msgstr ""
+
+msgid "That plan could not be started."
+msgstr ""
+
 #, python-format
 msgid "The %(aggregate)s aggregate is not supported on this database"
 msgstr ""
@@ -17518,6 +17537,9 @@ msgid ""
 msgstr ""
 "Це може бути або адреса IP (наприклад, 127.0.0.1), або домен (наприклад, "
 "mydatabase.com)."
+
+msgid "This canvas changed while you were editing, so your change was undone."
+msgstr ""
 
 msgid "This canvas does not exist, or you do not have access to it"
 msgstr ""
@@ -20354,6 +20376,9 @@ msgstr ""
 msgid "You do not have permission to access this datasource"
 msgstr ""
 
+msgid "You do not have permission to change this layout."
+msgstr ""
+
 #, python-format
 msgid "You do not have permission to edit this %s"
 msgstr "Ви не маєте прав для редагування: %s"
@@ -20884,6 +20909,12 @@ msgstr "піктограма для логічного типу"
 
 msgid "bottom"
 msgstr "знизу"
+
+msgid "bottom left"
+msgstr ""
+
+msgid "bottom right"
+msgstr ""
 
 msgid "button (cmd + z) until you save your changes."
 msgstr "натискайте кнопку (cmd + z), доки не збережете зміни."
@@ -21720,6 +21751,12 @@ msgstr "до"
 
 msgid "top"
 msgstr "зверху"
+
+msgid "top left"
+msgstr ""
+
+msgid "top right"
+msgstr ""
 
 msgid "undo"
 msgstr "скасувати"

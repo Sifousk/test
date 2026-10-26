@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-26 12:43+0300\n"
+"POT-Creation-Date: 2026-10-26 13:08+0200\n"
 "PO-Revision-Date: 2024-07-14 15:10+0300\n"
 "Last-Translator: Abdalrahim G. Fakhouri <abdilra7eem@yahoo.com>\n"
 "Language: ar\n"
@@ -11519,6 +11519,9 @@ msgstr "تحرك فقط"
 msgid "Move only"
 msgstr "تحرك فقط"
 
+msgid "Move widget"
+msgstr ""
+
 #, python-format
 msgid "Moved %s '%s'"
 msgstr ""
@@ -13016,6 +13019,9 @@ msgstr ""
 msgid "Plain"
 msgstr "عادي"
 
+msgid "Plan mode"
+msgstr ""
+
 msgid ""
 "Please check your query and confirm that all template parameters are "
 "surround by double braces, for example, \"{{ ds }}\". Then, try running "
@@ -14118,6 +14124,10 @@ msgstr ""
 msgid "Resize"
 msgstr "إعادة تعيين"
 
+#, python-format
+msgid "Resize widget from the %s corner"
+msgstr ""
+
 msgid "Resource already has an attached report."
 msgstr "يحتوي المورد بالفعل على تقرير مرفق."
 
@@ -14717,6 +14727,9 @@ msgid ""
 "Display titles cannot be recovered automatically. For API requests, "
 "select current member IDs and supply semantic_selection_version from "
 "datasource metadata or MCP list_metrics."
+msgstr ""
+
+msgid "Saving your changes…"
 msgstr ""
 
 #, fuzzy
@@ -17264,6 +17277,12 @@ msgstr "محاذاة النص"
 msgid "Text embedded in email"
 msgstr "نص مضمن في البريد الإلكتروني"
 
+msgid "That change could not be saved."
+msgstr ""
+
+msgid "That plan could not be started."
+msgstr ""
+
 #, python-format
 msgid "The %(aggregate)s aggregate is not supported on this database"
 msgstr ""
@@ -19001,6 +19020,9 @@ msgid ""
 msgstr ""
 "يمكن أن يكون هذا إما عنوان IP (على سبيل المثال 127.0.0.1) أو اسم نطاق "
 "(مثل mydatabase.com)."
+
+msgid "This canvas changed while you were editing, so your change was undone."
+msgstr ""
 
 msgid "This canvas does not exist, or you do not have access to it"
 msgstr ""
@@ -22035,6 +22057,9 @@ msgstr ""
 msgid "You do not have permission to access this datasource"
 msgstr ""
 
+msgid "You do not have permission to change this layout."
+msgstr ""
+
 #, python-format
 msgid "You do not have permission to edit this %s"
 msgstr "ليس لديك إذن لتحرير هذا %s"
@@ -22595,6 +22620,12 @@ msgstr "رمز النوع المنطقي"
 
 msgid "bottom"
 msgstr "الجزء السفلي"
+
+msgid "bottom left"
+msgstr ""
+
+msgid "bottom right"
+msgstr ""
 
 msgid "button (cmd + z) until you save your changes."
 msgstr "زر (cmd + z) حتى تقوم بحفظ التغييرات."
@@ -23481,6 +23512,12 @@ msgstr "قمة"
 
 msgid "top"
 msgstr "قمة"
+
+msgid "top left"
+msgstr ""
+
+msgid "top right"
+msgstr ""
 
 msgid "undo"
 msgstr "التراجع"

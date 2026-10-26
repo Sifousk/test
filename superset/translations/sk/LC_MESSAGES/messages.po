@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-26 12:43+0300\n"
+"POT-Creation-Date: 2026-10-26 13:08+0200\n"
 "PO-Revision-Date: 2026-05-18 15:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -10726,6 +10726,9 @@ msgstr "Iba presunúť"
 msgid "Move only"
 msgstr "Iba presunúť"
 
+msgid "Move widget"
+msgstr ""
+
 #, python-format
 msgid "Moved %s '%s'"
 msgstr ""
@@ -12171,6 +12174,9 @@ msgstr ""
 msgid "Plain"
 msgstr "Prostý"
 
+msgid "Plan mode"
+msgstr ""
+
 msgid ""
 "Please check your query and confirm that all template parameters are "
 "surround by double braces, for example, \"{{ ds }}\". Then, try running "
@@ -13208,6 +13214,10 @@ msgstr ""
 msgid "Resize"
 msgstr "Zmeniť veľkosť"
 
+#, python-format
+msgid "Resize widget from the %s corner"
+msgstr ""
+
 msgid "Resource already has an attached report."
 msgstr "Zdroj již má připojený report."
 
@@ -13794,6 +13804,9 @@ msgid ""
 "Display titles cannot be recovered automatically. For API requests, "
 "select current member IDs and supply semantic_selection_version from "
 "datasource metadata or MCP list_metrics."
+msgstr ""
+
+msgid "Saving your changes…"
 msgstr ""
 
 msgid "Saving..."
@@ -16191,6 +16204,12 @@ msgstr "Zarovnanie textu"
 msgid "Text embedded in email"
 msgstr "Text vložený v e-mailu"
 
+msgid "That change could not be saved."
+msgstr ""
+
+msgid "That plan could not be started."
+msgstr ""
+
 #, python-format
 msgid "The %(aggregate)s aggregate is not supported on this database"
 msgstr ""
@@ -17840,6 +17859,9 @@ msgid ""
 msgstr ""
 "Môže to být buď IP adresa (např. 127.0.0.1), alebo názov domény (např. "
 "mojedatabaze.com)."
+
+msgid "This canvas changed while you were editing, so your change was undone."
+msgstr ""
 
 msgid "This canvas does not exist, or you do not have access to it"
 msgstr ""
@@ -20719,6 +20741,9 @@ msgstr ""
 msgid "You do not have permission to access this datasource"
 msgstr ""
 
+msgid "You do not have permission to change this layout."
+msgstr ""
+
 #, python-format
 msgid "You do not have permission to edit this %s"
 msgstr "Nemáte oprávnenie k úprave tohoto %s"
@@ -21253,6 +21278,12 @@ msgstr "ikona typu boolean"
 
 msgid "bottom"
 msgstr "dole"
+
+msgid "bottom left"
+msgstr ""
+
+msgid "bottom right"
+msgstr ""
 
 msgid "button (cmd + z) until you save your changes."
 msgstr "tlačidlo (cmd + z), dokud neuložíte svoje zmeny."
@@ -22105,6 +22136,12 @@ msgstr "do"
 
 msgid "top"
 msgstr "nahoře"
+
+msgid "top left"
+msgstr ""
+
+msgid "top right"
+msgstr ""
 
 msgid "undo"
 msgstr "späť"

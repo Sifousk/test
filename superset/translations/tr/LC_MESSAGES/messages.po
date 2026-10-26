@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Superset VERSION\n"
 "Report-Msgid-Bugs-To: avsarcoteli@gmail.com\n"
-"POT-Creation-Date: 2026-10-26 12:43+0300\n"
+"POT-Creation-Date: 2026-10-26 13:08+0200\n"
 "PO-Revision-Date: 2024-02-25 14:00+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: tr\n"
@@ -10979,6 +10979,9 @@ msgstr "Taşıma simgesi"
 msgid "Move only"
 msgstr "Sadece hareket ettirin"
 
+msgid "Move widget"
+msgstr ""
+
 #, python-format
 msgid "Moved %s '%s'"
 msgstr ""
@@ -12455,6 +12458,9 @@ msgstr ""
 msgid "Plain"
 msgstr "Ova"
 
+msgid "Plan mode"
+msgstr ""
+
 msgid ""
 "Please check your query and confirm that all template parameters are "
 "surround by double braces, for example, \"{{ ds }}\". Then, try running "
@@ -13497,6 +13503,10 @@ msgstr ""
 msgid "Resize"
 msgstr "grafikler"
 
+#, python-format
+msgid "Resize widget from the %s corner"
+msgstr ""
+
 msgid "Resource already has an attached report."
 msgstr "Kaynak zaten eklenmiş bir rapora sahiptir."
 
@@ -14094,6 +14104,9 @@ msgid ""
 "Display titles cannot be recovered automatically. For API requests, "
 "select current member IDs and supply semantic_selection_version from "
 "datasource metadata or MCP list_metrics."
+msgstr ""
+
+msgid "Saving your changes…"
 msgstr ""
 
 #, fuzzy
@@ -16597,6 +16610,12 @@ msgstr "Metin hizası"
 msgid "Text embedded in email"
 msgstr "Metin e-postada gömülü"
 
+msgid "That change could not be saved."
+msgstr ""
+
+msgid "That plan could not be started."
+msgstr ""
+
 #, python-format
 msgid "The %(aggregate)s aggregate is not supported on this database"
 msgstr ""
@@ -18274,6 +18293,9 @@ msgid ""
 "This can be either an IP address (e.g. 127.0.0.1) or a domain name (e.g. "
 "mydatabase.com)."
 msgstr "Bu bir IP adresi (e.g. 127.0.0.1) veya bir alan adı (e.g. mydatabase.com)."
+
+msgid "This canvas changed while you were editing, so your change was undone."
+msgstr ""
 
 msgid "This canvas does not exist, or you do not have access to it"
 msgstr ""
@@ -21150,6 +21172,9 @@ msgstr ""
 msgid "You do not have permission to access this datasource"
 msgstr ""
 
+msgid "You do not have permission to change this layout."
+msgstr ""
+
 #, python-format
 msgid "You do not have permission to edit this %s"
 msgstr "Bu %s’i değiştirmeye yetkiniz yok"
@@ -21710,6 +21735,12 @@ msgstr "boolean type icon"
 
 msgid "bottom"
 msgstr "alt"
+
+msgid "bottom left"
+msgstr ""
+
+msgid "bottom right"
+msgstr ""
 
 msgid "button (cmd + z) until you save your changes."
 msgstr "Değişikliklerinizi kurtarıncaya kadar düğme (cmd + z)."
@@ -22585,6 +22616,12 @@ msgstr "toklanmak için"
 
 msgid "top"
 msgstr "Top"
+
+msgid "top left"
+msgstr ""
+
+msgid "top right"
+msgstr ""
 
 msgid "undo"
 msgstr "geri al"
