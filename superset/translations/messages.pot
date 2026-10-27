@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Superset VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-22 18:22-0700\n"
+"POT-Creation-Date: 2026-10-26 17:06-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -240,6 +240,18 @@ msgstr[1] ""
 
 #, python-format
 msgid "%(object)s does not exist in this database."
+msgstr ""
+
+#, python-format
+msgid "%(origin)s is blocked by the Content Security Policy. Ask an administrator to allow this domain."
+msgstr ""
+
+#, python-format
+msgid "%(origin)s is blocked by the Content Security Policy. Enable it to allow this content to load."
+msgstr ""
+
+#, python-format
+msgid "%(origin)s is now allowed to be embedded."
 msgstr ""
 
 #, python-format
@@ -549,6 +561,14 @@ msgstr ""
 
 #, python-format
 msgid "%s%s"
+msgstr ""
+
+#, python-format
+msgid "'%(value)s' is not a valid origin. Provide a bare scheme://host[:port] value with no wildcard, path, query or fragment."
+msgstr ""
+
+#, python-format
+msgid "'%(value)s' is not an allowed CSP directive. Allowed: %(allowed)s."
 msgstr ""
 
 msgid "(Removed)"
@@ -4151,9 +4171,7 @@ msgid "Could not automatically fetch: %s. This is often blocked by the remote se
 msgstr ""
 
 #, python-format
-msgid ""
-"Could not check which charts and dashboards depend on the selected %s. "
-"Archiving them may make charts unavailable."
+msgid "Could not check which charts and dashboards depend on the selected %s. Archiving them may make charts unavailable."
 msgstr ""
 
 #, python-format
@@ -5164,6 +5182,12 @@ msgid "Deleted"
 msgstr ""
 
 #, python-format
+msgid "Deleted %(num)d CSP allowlist entry"
+msgid_plural "Deleted %(num)d CSP allowlist entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#, python-format
 msgid "Deleted %(num)d annotation"
 msgid_plural "Deleted %(num)d annotations"
 msgstr[0] ""
@@ -5943,13 +5967,25 @@ msgstr ""
 msgid "Embed"
 msgstr ""
 
+msgid "Embed / Iframe"
+msgstr ""
+
+msgid "Embed URL"
+msgstr ""
+
 msgid "Embed code"
 msgstr ""
 
 msgid "Embed dashboard"
 msgstr ""
 
+msgid "Embed external content via a URL"
+msgstr ""
+
 msgid "Embedded authentication failed. The guest token may exceed the request-header size limit. Reduce the token payload; large inline RLS lists can be replaced with an entitlements-table lookup."
+msgstr ""
+
+msgid "Embedded content"
 msgstr ""
 
 msgid "Embedded dashboard could not be deleted."
@@ -5998,6 +6034,9 @@ msgid "Enable cross-filtering"
 msgstr ""
 
 msgid "Enable data zooming controls"
+msgstr ""
+
+msgid "Enable domain in CSP"
 msgstr ""
 
 msgid "Enable embedding"
@@ -6093,6 +6132,9 @@ msgid "Enter CA_BUNDLE"
 msgstr ""
 
 msgid "Enter Primary Credentials"
+msgstr ""
+
+msgid "Enter a URL above to embed content"
 msgstr ""
 
 msgid "Enter a name for this sheet"
@@ -6620,6 +6662,10 @@ msgstr ""
 
 #, python-format
 msgid "Failed to add %s: %s"
+msgstr ""
+
+#, python-format
+msgid "Failed to allow %(origin)s in the CSP."
 msgstr ""
 
 msgid "Failed to apply theme: Invalid JSON"
@@ -9375,6 +9421,9 @@ msgstr ""
 msgid "No Tags created"
 msgstr ""
 
+msgid "No URL configured"
+msgstr ""
+
 msgid "No actions"
 msgstr ""
 
@@ -10203,6 +10252,9 @@ msgid "Paste"
 msgstr ""
 
 msgid "Paste Private Key here"
+msgstr ""
+
+msgid "Paste a URL to embed, e.g. https://example.com"
 msgstr ""
 
 msgid "Paste content of service credentials JSON file here"
@@ -14425,10 +14477,11 @@ msgid "The screenshot is being generated. Please, do not leave the page."
 msgstr ""
 
 #, python-format
-msgid ""
-"The selected %(type)s are linked to %(charts)s on %(dashboards)s. "
-"Archiving them will make dependent charts unavailable until they are "
-"recovered."
+msgid "The selected %(type)s are linked to %(charts)s on %(dashboards)s. Archiving them will make dependent charts unavailable until they are recovered."
+msgstr ""
+
+#, python-format
+msgid "The selected %(type)s are used by %(charts)s. Archiving them will make dependent charts unavailable until they are recovered."
 msgstr ""
 
 #, python-format
@@ -14872,19 +14925,13 @@ msgid "These %(type)s will be moved to Recently Archived and may be permanently 
 msgstr ""
 
 #, python-format
-msgid ""
-"These %(type)s will be moved to Recently Archived. You can recover them "
-"there within %(days)s day."
-msgid_plural ""
-"These %(type)s will be moved to Recently Archived. You can recover them "
-"there within %(days)s days."
+msgid "These %(type)s will be moved to Recently Archived. You can recover them there within %(days)s day."
+msgid_plural "These %(type)s will be moved to Recently Archived. You can recover them there within %(days)s days."
 msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
-msgid ""
-"These %(type)s will be moved to Recently Archived. You can recover them "
-"there."
+msgid "These %(type)s will be moved to Recently Archived. You can recover them there."
 msgstr ""
 
 msgid "These are the datasets this filter will be applied to."
@@ -14895,9 +14942,11 @@ msgid "This %(schedule)s executes as another user. Only admins can change its co
 msgstr ""
 
 #, python-format
-msgid ""
-"This %(type)s is linked to %(charts)s on %(dashboards)s. Archiving it "
-"will make dependent charts unavailable until it is recovered."
+msgid "This %(type)s is linked to %(charts)s on %(dashboards)s. Archiving it will make dependent charts unavailable until it is recovered."
+msgstr ""
+
+#, python-format
+msgid "This %(type)s is used by %(charts)s. Archiving it will make dependent charts unavailable until it is recovered."
 msgstr ""
 
 #, python-format
@@ -14905,19 +14954,13 @@ msgid "This %(type)s will be moved to Recently Archived and may be permanently d
 msgstr ""
 
 #, python-format
-msgid ""
-"This %(type)s will be moved to Recently Archived. You can recover it "
-"there within %(days)s day."
-msgid_plural ""
-"This %(type)s will be moved to Recently Archived. You can recover it "
-"there within %(days)s days."
+msgid "This %(type)s will be moved to Recently Archived. You can recover it there within %(days)s day."
+msgid_plural "This %(type)s will be moved to Recently Archived. You can recover it there within %(days)s days."
 msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
-msgid ""
-"This %(type)s will be moved to Recently Archived. You can recover it "
-"there."
+msgid "This %(type)s will be moved to Recently Archived. You can recover it there."
 msgstr ""
 
 msgid "This CSS uses @import, which cannot be saved"
@@ -15010,6 +15053,10 @@ msgstr ""
 msgid "This column must contain date/time information."
 msgstr ""
 
+#, python-format
+msgid "This component requires the \"%(id)s\" extension, which is not available."
+msgstr ""
+
 msgid "This control filters the whole chart based on the selected time range. All relative times, e.g. \"Last month\", \"Last 7 days\", \"now\", etc. are evaluated on the server using the server's local time (sans timezone). All tooltips and placeholder times are expressed in UTC (sans timezone). The timestamps are then evaluated by the database using the engine's local timezone. Note one can explicitly set the timezone per the ISO 8601 format if specifying either the start and/or end time."
 msgstr ""
 
@@ -15084,6 +15131,9 @@ msgid "This defines the element to be plotted on the chart"
 msgstr ""
 
 msgid "This dimension is not compatible with the current selections. Select a compatible dimension."
+msgstr ""
+
+msgid "This domain is not allowed to be embedded"
 msgstr ""
 
 msgid "This email is already associated with an account. Please choose another one."
@@ -16378,6 +16428,9 @@ msgid "View all charts"
 msgstr ""
 
 msgid "View as table"
+msgstr ""
+
+msgid "View in Recently Archived →"
 msgstr ""
 
 msgid "View in SQL Lab"
@@ -18365,19 +18418,4 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "№"
-msgstr ""
-
-#, python-format
-msgid ""
-"The selected %(type)s are used by %(charts)s. Archiving them will make "
-"dependent charts unavailable until they are recovered."
-msgstr ""
-
-#, python-format
-msgid ""
-"This %(type)s is used by %(charts)s. Archiving it will make dependent charts"
-" unavailable until it is recovered."
-msgstr ""
-
-msgid "View in Recently Archived →"
 msgstr ""
