@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Superset VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-22 18:22-0700\n"
+"POT-Creation-Date: 2026-10-26 15:51-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ro\n"
@@ -389,6 +389,10 @@ msgstr "CHEIE PRIVATĂ SSH TUNNEL %s"
 #, python-format
 msgid "%s SSH TUNNEL PRIVATE KEY PASSWORD"
 msgstr "PAROLĂ CHEIE PRIVATĂ SSH TUNNEL %s"
+
+#, python-format
+msgid "%s Select"
+msgstr ""
 
 #, python-format
 msgid "%s Selected"
@@ -1097,6 +1101,12 @@ msgstr ""
 "Un grafic cu lumânări afișează valorile de deschidere, închidere, maximă "
 "și minimă pentru fiecare perioadă. Este folosit frecvent în analize "
 "financiare și de interval pe serii temporale."
+
+msgid ""
+"A chart on this dashboard or in this version was permanently deleted "
+"while the dashboard was being restored, so nothing was changed. Please "
+"try again."
+msgstr ""
 
 msgid "A comma separated list of columns that should be parsed as dates"
 msgstr "O listă separată prin virgulă de coloane care ar trebui analizate ca date"
@@ -6241,6 +6251,17 @@ msgid "Delete %s"
 msgstr "Șterge %s"
 
 #, python-format
+msgid ""
+"Delete %s stored credential pair for \"%s\"? Affected users must "
+"authorize this connection again."
+msgid_plural ""
+"Delete %s stored credential pairs for \"%s\"? Affected users must "
+"authorize this connection again."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#, python-format
 msgid "Delete %s?"
 msgstr "Șterge %s?"
 
@@ -6252,6 +6273,13 @@ msgstr "Șterge Grupul?"
 
 msgid "Delete Layer?"
 msgstr "Șterge Stratul?"
+
+#, python-format
+msgid "Delete OAuth2 tokens for %s"
+msgstr ""
+
+msgid "Delete OAuth2 tokens?"
+msgstr ""
 
 msgid "Delete Query?"
 msgstr "Șterge Interogarea?"
@@ -6283,8 +6311,24 @@ msgstr "Șterge Tema?"
 msgid "Delete User?"
 msgstr "Șterge Utilizatorul?"
 
+#, python-format
+msgid ""
+"Delete all %s stored credential pair for \"%s\", including users outside "
+"this page and search? Affected users must authorize this connection "
+"again."
+msgid_plural ""
+"Delete all %s stored credential pairs for \"%s\", including users outside"
+" this page and search? Affected users must authorize this connection "
+"again."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
 msgid "Delete all Really?"
 msgstr "Șterge totul Chiar?"
+
+msgid "Delete all tokens"
+msgstr ""
 
 msgid "Delete annotation"
 msgstr "Șterge adnotare"
@@ -6324,6 +6368,9 @@ msgstr ""
 
 msgid "Delete role"
 msgstr "Șterge rol"
+
+msgid "Delete selected"
+msgstr ""
 
 msgid "Delete template"
 msgstr "Șterge șablon"
@@ -6473,6 +6520,12 @@ msgid ""
 msgstr ""
 "Ștergerea unei file va elimina tot conținutul din ea și va dezactiva "
 "orice alerte sau rapoarte conexe. Poți încă să anulezi această acțiune cu"
+
+msgid ""
+"Deleting credentials removes both access and refresh tokens from "
+"Superset. Affected users must authorize this connection again. Tokens are"
+" not revoked at the OAuth2 provider."
+msgstr ""
 
 msgid ""
 "Deleting this dataset is permanent. The affected charts and dashboards "
@@ -7892,6 +7945,9 @@ msgstr "Experimental"
 msgid "Expired"
 msgstr "Expirat"
 
+msgid "Expires on"
+msgstr ""
+
 msgid ""
 "Explicit formats validate all values against bundled boundaries. "
 "Supported countries: USA, Canada, Australia, Japan, UK. Unrecognized or "
@@ -8150,6 +8206,9 @@ msgstr ""
 msgid "Failed to delete %(name)s: %(errMsg)s"
 msgstr ""
 
+msgid "Failed to delete OAuth2 tokens. Please try again."
+msgstr ""
+
 #, python-format
 msgid "Failed to establish an SSH tunnel to the database: %(reason)s"
 msgstr ""
@@ -8177,6 +8236,9 @@ msgstr "Eșuat la generarea URL-ului de editare grafic"
 #, fuzzy, python-format
 msgid "Failed to generate download: %s"
 msgstr "Generarea descărcării a eșuat: %s"
+
+msgid "Failed to load OAuth2 tokens."
+msgstr ""
 
 msgid "Failed to load chart data"
 msgstr "Eșuat la încărcarea datelor graficului"
@@ -10543,6 +10605,13 @@ msgstr ""
 msgid "Manage"
 msgstr "Gestionează"
 
+msgid "Manage OAuth2 tokens"
+msgstr ""
+
+#, python-format
+msgid "Manage OAuth2 tokens: %s"
+msgstr ""
+
 msgid "Manage dashboard editors and access permissions"
 msgstr "Gestionați editorii tabloului de bord și permisiunile de acces"
 
@@ -11607,6 +11676,9 @@ msgstr "Nicio expresie salvată găsită"
 msgid "No saved metrics found"
 msgstr "Nu s-au găsit indicatori salvați"
 
+msgid "No saved version to preview"
+msgstr ""
+
 msgid "No selection modes are available for this control."
 msgstr ""
 
@@ -11886,6 +11958,14 @@ msgstr "Interval numeric"
 msgid "OAuth2 client information"
 msgstr "Informații despre clientul OAuth2"
 
+msgid "OAuth2 tokens could not be deleted."
+msgstr ""
+
+msgid ""
+"OAuth2 tokens deleted. Affected users must authorize this connection "
+"again."
+msgstr ""
+
 msgid "OCT"
 msgstr "OCT"
 
@@ -11941,6 +12021,9 @@ msgstr "Unul sau mai multe controale pentru pivotare ca coloane"
 
 msgid "One or many metrics to display"
 msgstr "Unul sau mai mulți indicatori de afișat"
+
+msgid "One or more OAuth2 tokens were not found for this database."
+msgstr ""
 
 msgid "One or more annotation layers failed loading."
 msgstr "Unul sau mai multe straturi de adnotare au eșuat la încărcare."
@@ -14413,6 +14496,9 @@ msgstr ""
 msgid "Search Metrics & Columns"
 msgstr "Caută indicatori și coloane"
 
+msgid "Search OAuth2 tokens"
+msgstr ""
+
 msgid "Search a channel by name, or paste a channel ID"
 msgstr ""
 
@@ -14439,6 +14525,9 @@ msgstr "Căutare după"
 
 msgid "Search by query text"
 msgstr "Caută după textul interogării"
+
+msgid "Search by username, name, or email"
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: de, it, ja,
 # sr, sr_Latn]
@@ -15449,6 +15538,9 @@ msgid_plural "Show %s more changes"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+msgid "Show All/Invert buttons in legend"
+msgstr ""
 
 msgid "Show Bubbles"
 msgstr "Afișează bule"
@@ -19225,6 +19317,9 @@ msgstr "Format timp"
 msgid "Time grain"
 msgstr "Granularitate timp"
 
+msgid "Time grain applied to the temporal levels of the hierarchy."
+msgstr ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: de, ja, lv,
 # ru, sr, sr_Latn, tr, uk]
 #, fuzzy
@@ -19309,6 +19404,9 @@ msgstr "Eroare timeout"
 msgid "Timestamp format"
 msgstr "Format marcaj temporal"
 
+msgid "Timestamps are shown in server time."
+msgstr ""
+
 msgid "Timezone"
 msgstr "Fus orar"
 
@@ -19367,6 +19465,9 @@ msgid_plural "To request access, reach out to the chart owners: %s."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+msgid "Toggle to show/hide the \"All/Invert\" buttons in the legend."
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: cs, de, ja,
 # lv, ru, sk, sr, sr_Latn, tr, uk]

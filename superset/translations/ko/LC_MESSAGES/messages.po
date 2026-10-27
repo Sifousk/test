@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-22 18:22-0700\n"
+"POT-Creation-Date: 2026-10-26 15:51-0300\n"
 "PO-Revision-Date: 2019-02-02 22:28+0900\n"
 "Last-Translator: \n"
 "Language: ko\n"
@@ -431,6 +431,10 @@ msgstr "%s SSH 터널 개인 키"
 #, fuzzy, python-format
 msgid "%s SSH TUNNEL PRIVATE KEY PASSWORD"
 msgstr "%s SSH 터널 개인 키 비밀번호"
+
+#, python-format
+msgid "%s Select"
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, it, ja, lv, mi, nl, pl, pt, pt_BR, ro, ru, sk, sl, sr,
@@ -1324,6 +1328,12 @@ msgid ""
 " period. It is commonly used for financial and other time-series range "
 "analysis."
 msgstr "캔들스틱 차트는 각 기간의 시가, 종가, 고가, 저가를 보여 줍니다. 금융 및 기타 시계열 범위 분석에 자주 사용됩니다."
+
+msgid ""
+"A chart on this dashboard or in this version was permanently deleted "
+"while the dashboard was being restored, so nothing was changed. Please "
+"try again."
+msgstr ""
 
 #, fuzzy
 msgid "A comma separated list of columns that should be parsed as dates"
@@ -8446,6 +8456,15 @@ msgstr "삭제"
 msgid "Delete %s"
 msgstr ""
 
+#, python-format
+msgid ""
+"Delete %s stored credential pair for \"%s\"? Affected users must "
+"authorize this connection again."
+msgid_plural ""
+"Delete %s stored credential pairs for \"%s\"? Affected users must "
+"authorize this connection again."
+msgstr[0] ""
+
 # Machine-corrected via repair_i18n.py (claude-sonnet-4-6) [restored
 # placeholder]
 #, python-format
@@ -8461,6 +8480,13 @@ msgstr "삭제"
 
 msgid "Delete Layer?"
 msgstr "삭제"
+
+#, python-format
+msgid "Delete OAuth2 tokens for %s"
+msgstr ""
+
+msgid "Delete OAuth2 tokens?"
+msgstr ""
 
 msgid "Delete Query?"
 msgstr "삭제"
@@ -8492,12 +8518,26 @@ msgstr "CSS 템플릿"
 msgid "Delete User?"
 msgstr "삭제"
 
+#, python-format
+msgid ""
+"Delete all %s stored credential pair for \"%s\", including users outside "
+"this page and search? Affected users must authorize this connection "
+"again."
+msgid_plural ""
+"Delete all %s stored credential pairs for \"%s\", including users outside"
+" this page and search? Affected users must authorize this connection "
+"again."
+msgstr[0] ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, ja, lv, mi, nl, pl, pt, pt_BR, ro, ru, sk, sl, sr, sr_Latn,
 # tr, uk, zh, zh_TW]
 #, fuzzy
 msgid "Delete all Really?"
 msgstr "정말 모두 삭제하시겠습니까?"
+
+msgid "Delete all tokens"
+msgstr ""
 
 msgid "Delete annotation"
 msgstr "주석"
@@ -8541,6 +8581,9 @@ msgstr ""
 #, fuzzy
 msgid "Delete role"
 msgstr "삭제"
+
+msgid "Delete selected"
+msgstr ""
 
 msgid "Delete template"
 msgstr "템플릿 불러오기"
@@ -8701,6 +8744,12 @@ msgid ""
 "Deleting a tab will remove all content within it and will deactivate any "
 "related alerts or reports. You may still reverse this action with the"
 msgstr "탭을 삭제하면 그 안의 모든 콘텐츠가 제거되고 관련 알림 또는 보고서가 비활성화됩니다. 다음을 사용하여 이 작업을 되돌릴 수 있습니다"
+
+msgid ""
+"Deleting credentials removes both access and refresh tokens from "
+"Superset. Affected users must authorize this connection again. Tokens are"
+" not revoked at the OAuth2 provider."
+msgstr ""
 
 msgid ""
 "Deleting this dataset is permanent. The affected charts and dashboards "
@@ -10755,6 +10804,9 @@ msgstr "실험적"
 msgid "Expired"
 msgstr "테이블 명"
 
+msgid "Expires on"
+msgstr ""
+
 msgid ""
 "Explicit formats validate all values against bundled boundaries. "
 "Supported countries: USA, Canada, Australia, Japan, UK. Unrecognized or "
@@ -11125,6 +11177,9 @@ msgstr ""
 msgid "Failed to delete %(name)s: %(errMsg)s"
 msgstr ""
 
+msgid "Failed to delete OAuth2 tokens. Please try again."
+msgstr ""
+
 #, python-format
 msgid "Failed to establish an SSH tunnel to the database: %(reason)s"
 msgstr ""
@@ -11156,6 +11211,9 @@ msgstr "차트 편집 URL 생성에 실패했습니다"
 #, fuzzy, python-format
 msgid "Failed to generate download: %s"
 msgstr "다운로드 생성에 실패했습니다: %s"
+
+msgid "Failed to load OAuth2 tokens."
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, ja, lv, mi, nl, pl, pt_BR, ro, ru, sk, sl, sr, sr_Latn, tr,
@@ -14597,6 +14655,13 @@ msgstr "잘못된 요청입니다. slice_id 또는 table_name 및 db_name 인수
 msgid "Manage"
 msgstr "관리"
 
+msgid "Manage OAuth2 tokens"
+msgstr ""
+
+#, python-format
+msgid "Manage OAuth2 tokens: %s"
+msgstr ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ca, cs, de,
 # es, fa, fi, fr, it, ja, lv, mi, nl, pl, pt_BR, ro, ru, sk, sl, sr, sr_Latn,
 # th, tr, uk]
@@ -16143,6 +16208,9 @@ msgstr "표현식"
 msgid "No saved metrics found"
 msgstr "저장된 Query"
 
+msgid "No saved version to preview"
+msgstr ""
+
 msgid "No selection modes are available for this control."
 msgstr ""
 
@@ -16595,6 +16663,14 @@ msgstr "숫자 범위"
 msgid "OAuth2 client information"
 msgstr "주석"
 
+msgid "OAuth2 tokens could not be deleted."
+msgstr ""
+
+msgid ""
+"OAuth2 tokens deleted. Affected users must authorize this connection "
+"again."
+msgstr ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, ja, lv, mi, nl, pl, pt_BR, ro, ru, sk, sl, sr, sr_Latn, tr,
 # uk, zh, zh_TW]
@@ -16683,6 +16759,9 @@ msgstr "열로 피벗할 하나 이상의 컨트롤"
 #, fuzzy
 msgid "One or many metrics to display"
 msgstr "표시할 하나 이상의 측정 항목"
+
+msgid "One or more OAuth2 tokens were not found for this database."
+msgstr ""
 
 #, fuzzy
 msgid "One or more annotation layers failed loading."
@@ -20341,6 +20420,9 @@ msgstr ""
 msgid "Search Metrics & Columns"
 msgstr "지표 및 열 검색"
 
+msgid "Search OAuth2 tokens"
+msgstr ""
+
 msgid "Search a channel by name, or paste a channel ID"
 msgstr ""
 
@@ -20369,6 +20451,9 @@ msgstr "검색"
 #, fuzzy
 msgid "Search by query text"
 msgstr "쿼리 텍스트로 검색"
+
+msgid "Search by username, name, or email"
+msgstr ""
 
 #, fuzzy
 msgid "Search calculated columns by name"
@@ -21619,6 +21704,9 @@ msgstr ""
 msgid "Show %s more change"
 msgid_plural "Show %s more changes"
 msgstr[0] ""
+
+msgid "Show All/Invert buttons in legend"
+msgstr ""
 
 #, fuzzy
 msgid "Show Bubbles"
@@ -26677,6 +26765,9 @@ msgstr "D3 포멧"
 msgid "Time grain"
 msgstr "시간 단위"
 
+msgid "Time grain applied to the temporal levels of the hierarchy."
+msgstr ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: de, ja, lv,
 # ru, sr, sr_Latn, tr, uk]
 #, fuzzy
@@ -26798,6 +26889,9 @@ msgstr "시간 초과 오류"
 msgid "Timestamp format"
 msgstr "타임스탬프 형식"
 
+msgid "Timestamps are shown in server time."
+msgstr ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, ja, lv, mi, nl, pl, pt_BR, ro, ru, sk, sl, sr, sr_Latn, tr,
 # uk, zh, zh_TW]
@@ -26875,6 +26969,9 @@ msgstr ""
 msgid "To request access, reach out to the chart owner: %s."
 msgid_plural "To request access, reach out to the chart owners: %s."
 msgstr[0] ""
+
+msgid "Toggle to show/hide the \"All/Invert\" buttons in the legend."
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: cs, de, ja,
 # lv, ru, sk, sr, sr_Latn, tr, uk]

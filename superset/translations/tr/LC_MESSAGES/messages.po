@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Superset VERSION\n"
 "Report-Msgid-Bugs-To: avsarcoteli@gmail.com\n"
-"POT-Creation-Date: 2026-10-22 18:22-0700\n"
+"POT-Creation-Date: 2026-10-26 15:51-0300\n"
 "PO-Revision-Date: 2024-02-25 14:00+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: tr\n"
@@ -361,6 +361,10 @@ msgstr "%s SSH TUNNEL PRIVATE KEY"
 #, python-format
 msgid "%s SSH TUNNEL PRIVATE KEY PASSWORD"
 msgstr "%s SSH TUNNEL PRIVATE KEY PASSWORD"
+
+#, python-format
+msgid "%s Select"
+msgstr ""
 
 #, python-format
 msgid "%s Selected"
@@ -1012,6 +1016,12 @@ msgstr ""
 "Mum grafiği her dönem için açılış, kapanış, en yüksek ve en düşük "
 "değerleri gösterir. Genellikle finansal ve diğer zaman serisi aralık "
 "analizlerinde kullanılır."
+
+msgid ""
+"A chart on this dashboard or in this version was permanently deleted "
+"while the dashboard was being restored, so nothing was changed. Please "
+"try again."
+msgstr ""
 
 msgid "A comma separated list of columns that should be parsed as dates"
 msgstr "Tarih olarak ayrıştırılacak sütunların virgülle ayrılmış listesi"
@@ -5949,6 +5959,15 @@ msgid "Delete %s"
 msgstr "%s öğesini sil"
 
 #, python-format
+msgid ""
+"Delete %s stored credential pair for \"%s\"? Affected users must "
+"authorize this connection again."
+msgid_plural ""
+"Delete %s stored credential pairs for \"%s\"? Affected users must "
+"authorize this connection again."
+msgstr[0] ""
+
+#, python-format
 msgid "Delete %s?"
 msgstr "%s silinsin mi?"
 
@@ -5960,6 +5979,13 @@ msgstr "Grup Silinsin mi?"
 
 msgid "Delete Layer?"
 msgstr "Katman Silinsin mi?"
+
+#, python-format
+msgid "Delete OAuth2 tokens for %s"
+msgstr ""
+
+msgid "Delete OAuth2 tokens?"
+msgstr ""
 
 msgid "Delete Query?"
 msgstr "Sorgu Silinsin mi?"
@@ -5991,8 +6017,22 @@ msgstr "Tema Silinsin mi?"
 msgid "Delete User?"
 msgstr "Kullanıcı Silinsin mi?"
 
+#, python-format
+msgid ""
+"Delete all %s stored credential pair for \"%s\", including users outside "
+"this page and search? Affected users must authorize this connection "
+"again."
+msgid_plural ""
+"Delete all %s stored credential pairs for \"%s\", including users outside"
+" this page and search? Affected users must authorize this connection "
+"again."
+msgstr[0] ""
+
 msgid "Delete all Really?"
 msgstr "Hepsini silmek istiyor musunuz?"
+
+msgid "Delete all tokens"
+msgstr ""
 
 msgid "Delete annotation"
 msgstr "Delete annotasyon"
@@ -6029,6 +6069,9 @@ msgstr ""
 
 msgid "Delete role"
 msgstr "Rolü sil"
+
+msgid "Delete selected"
+msgstr ""
 
 msgid "Delete template"
 msgstr "Şablonu sil"
@@ -6157,6 +6200,12 @@ msgstr ""
 "Bir sekmeyi bitirmek, içindeki tüm içeriği ortadan kaldıracak ve ilgili "
 "uyarıları veya raporları iptal edecektir. Bu eylemi hala bununla tersine "
 "çevirebilirsiniz"
+
+msgid ""
+"Deleting credentials removes both access and refresh tokens from "
+"Superset. Affected users must authorize this connection again. Tokens are"
+" not revoked at the OAuth2 provider."
+msgstr ""
 
 msgid ""
 "Deleting this dataset is permanent. The affected charts and dashboards "
@@ -7534,6 +7583,9 @@ msgstr "Deneysel"
 msgid "Expired"
 msgstr "Süresi doldu"
 
+msgid "Expires on"
+msgstr ""
+
 msgid ""
 "Explicit formats validate all values against bundled boundaries. "
 "Supported countries: USA, Canada, Australia, Japan, UK. Unrecognized or "
@@ -7794,6 +7846,9 @@ msgstr ""
 msgid "Failed to delete %(name)s: %(errMsg)s"
 msgstr ""
 
+msgid "Failed to delete OAuth2 tokens. Please try again."
+msgstr ""
+
 #, python-format
 msgid "Failed to establish an SSH tunnel to the database: %(reason)s"
 msgstr ""
@@ -7821,6 +7876,9 @@ msgstr "Grafik düzenleme URL oluşturmak için başarısız oldu"
 #, fuzzy, python-format
 msgid "Failed to generate download: %s"
 msgstr "İndirme oluşturulamadı: %s"
+
+msgid "Failed to load OAuth2 tokens."
+msgstr ""
 
 msgid "Failed to load chart data"
 msgstr "Grafik verileri yüklemek için başarısız oldu"
@@ -10131,6 +10189,13 @@ msgstr ""
 msgid "Manage"
 msgstr "Yönetim"
 
+msgid "Manage OAuth2 tokens"
+msgstr ""
+
+#, python-format
+msgid "Manage OAuth2 tokens: %s"
+msgstr ""
+
 msgid "Manage dashboard editors and access permissions"
 msgstr "Pano düzenleyicilerini ve erişim izinlerini yönet"
 
@@ -11179,6 +11244,9 @@ msgstr "Bululmuş ifadeler bulunamadı"
 msgid "No saved metrics found"
 msgstr "Bullanmamış ölçümler bulunamadı"
 
+msgid "No saved version to preview"
+msgstr ""
+
 msgid "No selection modes are available for this control."
 msgstr ""
 
@@ -11458,6 +11526,14 @@ msgstr "Numerical range"
 msgid "OAuth2 client information"
 msgstr "Ek bilgi"
 
+msgid "OAuth2 tokens could not be deleted."
+msgstr ""
+
+msgid ""
+"OAuth2 tokens deleted. Affected users must authorize this connection "
+"again."
+msgstr ""
+
 msgid "OCT"
 msgstr "EKİ"
 
@@ -11515,6 +11591,9 @@ msgstr "Bir veya birçok kontrol sütun olarak önemli ölçüde"
 
 msgid "One or many metrics to display"
 msgstr "Bir veya birçok metrik görüntülemek için"
+
+msgid "One or more OAuth2 tokens were not found for this database."
+msgstr ""
 
 msgid "One or more annotation layers failed loading."
 msgstr "Bir veya daha fazla annotasyon tabakaları yüklemedi."
@@ -13951,6 +14030,9 @@ msgstr ""
 msgid "Search Metrics & Columns"
 msgstr "Arama Metrikleri ve Köşeleri"
 
+msgid "Search OAuth2 tokens"
+msgstr ""
+
 msgid "Search a channel by name, or paste a channel ID"
 msgstr ""
 
@@ -13975,6 +14057,9 @@ msgstr "Şuna göre ara"
 
 msgid "Search by query text"
 msgstr "Sorgu metni ile arama"
+
+msgid "Search by username, name, or email"
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: de, sr,
 # sr_Latn]
@@ -14981,6 +15066,9 @@ msgstr "Show   %s entries"
 msgid "Show %s more change"
 msgid_plural "Show %s more changes"
 msgstr[0] ""
+
+msgid "Show All/Invert buttons in legend"
+msgstr ""
 
 msgid "Show Bubbles"
 msgstr "Göster Bubbles"
@@ -18643,6 +18731,9 @@ msgstr "Zaman formatı"
 msgid "Time grain"
 msgstr "Zaman tahıl"
 
+msgid "Time grain applied to the temporal levels of the hierarchy."
+msgstr ""
+
 msgid "Time grain chart customization plugin"
 msgstr "Zaman tahıl grafiği özelleştirme eklenti"
 
@@ -18726,6 +18817,9 @@ msgstr "Zamanout hatası"
 msgid "Timestamp format"
 msgstr "Timestamp format"
 
+msgid "Timestamps are shown in server time."
+msgstr ""
+
 msgid "Timezone"
 msgstr "Timezone"
 
@@ -18779,6 +18873,9 @@ msgstr ""
 msgid "To request access, reach out to the chart owner: %s."
 msgid_plural "To request access, reach out to the chart owners: %s."
 msgstr[0] ""
+
+msgid "Toggle to show/hide the \"All/Invert\" buttons in the legend."
+msgstr ""
 
 msgid "Token Request URI"
 msgstr "Hediye İste URIRIRI"

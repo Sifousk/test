@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  Superset\n"
 "Report-Msgid-Bugs-To: dkrat7 @github.com\n"
-"POT-Creation-Date: 2026-10-22 18:22-0700\n"
+"POT-Creation-Date: 2026-10-26 15:51-0300\n"
 "PO-Revision-Date: 2026-07-29 16:16+0200\n"
 "Last-Translator: lapor-kris <lapor-kris@github.com>\n"
 "Language: sl_SI\n"
@@ -382,6 +382,10 @@ msgstr "%s ZASEBNI KLJUČ ZA SSH TUNEL"
 #, python-format
 msgid "%s SSH TUNNEL PRIVATE KEY PASSWORD"
 msgstr "%s GESLO ZASEBNEGA KLJUČA ZA SSH TUNEL"
+
+#, python-format
+msgid "%s Select"
+msgstr ""
 
 #, python-format
 msgid "%s Selected"
@@ -1080,6 +1084,12 @@ msgstr ""
 "Svečniški grafikon prikazuje vrednosti odprtja, zaprtja, najvišjo in "
 "najnižjo za vsako obdobje. Pogosto se uporablja za finančne in druge "
 "analize razponov časovnih vrst."
+
+msgid ""
+"A chart on this dashboard or in this version was permanently deleted "
+"while the dashboard was being restored, so nothing was changed. Please "
+"try again."
+msgstr ""
 
 msgid "A comma separated list of columns that should be parsed as dates"
 msgstr "Seznam stolpcev, ločenih z vejico, ki jih je treba razčleniti kot datume"
@@ -5941,6 +5951,18 @@ msgid "Delete %s"
 msgstr "Izbriši %s"
 
 #, python-format
+msgid ""
+"Delete %s stored credential pair for \"%s\"? Affected users must "
+"authorize this connection again."
+msgid_plural ""
+"Delete %s stored credential pairs for \"%s\"? Affected users must "
+"authorize this connection again."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#, python-format
 msgid "Delete %s?"
 msgstr "Izbrišem %s?"
 
@@ -5952,6 +5974,13 @@ msgstr "Želite izbrisati skupino?"
 
 msgid "Delete Layer?"
 msgstr "Izbrišem sloj?"
+
+#, python-format
+msgid "Delete OAuth2 tokens for %s"
+msgstr ""
+
+msgid "Delete OAuth2 tokens?"
+msgstr ""
 
 msgid "Delete Query?"
 msgstr "Izbrišem poizvedbo?"
@@ -5977,8 +6006,25 @@ msgstr "Želite izbrisati temo?"
 msgid "Delete User?"
 msgstr "Želite izbrisati uporabnika?"
 
+#, python-format
+msgid ""
+"Delete all %s stored credential pair for \"%s\", including users outside "
+"this page and search? Affected users must authorize this connection "
+"again."
+msgid_plural ""
+"Delete all %s stored credential pairs for \"%s\", including users outside"
+" this page and search? Affected users must authorize this connection "
+"again."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
 msgid "Delete all Really?"
 msgstr "Ali resnično vse izbrišem?"
+
+msgid "Delete all tokens"
+msgstr ""
 
 msgid "Delete annotation"
 msgstr "Izbriši oznako"
@@ -6015,6 +6061,9 @@ msgstr "Izbriši poizvedbo"
 
 msgid "Delete role"
 msgstr "Izbriši vlogo"
+
+msgid "Delete selected"
+msgstr ""
 
 msgid "Delete template"
 msgstr "Izbriši predlogo"
@@ -6171,6 +6220,12 @@ msgid ""
 msgstr ""
 "Izbris zavihka bo odstranil vso vsebino v njem in deaktiviral povezana "
 "opozorila in poročila. Še vedno boste lahko razveljavili dejanje z"
+
+msgid ""
+"Deleting credentials removes both access and refresh tokens from "
+"Superset. Affected users must authorize this connection again. Tokens are"
+" not revoked at the OAuth2 provider."
+msgstr ""
 
 msgid ""
 "Deleting this dataset is permanent. The affected charts and dashboards "
@@ -7510,6 +7565,9 @@ msgstr "Eksperimentalno"
 msgid "Expired"
 msgstr "Poteklo"
 
+msgid "Expires on"
+msgstr ""
+
 msgid ""
 "Explicit formats validate all values against bundled boundaries. "
 "Supported countries: USA, Canada, Australia, Japan, UK. Unrecognized or "
@@ -7756,6 +7814,9 @@ msgstr ""
 msgid "Failed to delete %(name)s: %(errMsg)s"
 msgstr ""
 
+msgid "Failed to delete OAuth2 tokens. Please try again."
+msgstr ""
+
 #, python-format
 msgid "Failed to establish an SSH tunnel to the database: %(reason)s"
 msgstr ""
@@ -7780,6 +7841,9 @@ msgstr "Neuspešno ustvarjanje URL za urejanje grafikona"
 #, python-format
 msgid "Failed to generate download: %s"
 msgstr "Prenosa ni bilo mogoče ustvariti: %s"
+
+msgid "Failed to load OAuth2 tokens."
+msgstr ""
 
 msgid "Failed to load chart data"
 msgstr "Neuspešno nalaganje podatkov grafikona"
@@ -10016,6 +10080,13 @@ msgstr ""
 msgid "Manage"
 msgstr "Upravljanje"
 
+msgid "Manage OAuth2 tokens"
+msgstr ""
+
+#, python-format
+msgid "Manage OAuth2 tokens: %s"
+msgstr ""
+
 msgid "Manage dashboard editors and access permissions"
 msgstr "Upravljanje urednikov nadzorne plošče in dovoljenj za dostop"
 
@@ -11025,6 +11096,9 @@ msgstr "Shranjeni izrazi niso najdeni"
 msgid "No saved metrics found"
 msgstr "Shranjene mere niso najdene"
 
+msgid "No saved version to preview"
+msgstr ""
+
 msgid "No selection modes are available for this control."
 msgstr ""
 
@@ -11295,6 +11369,14 @@ msgstr "Številski obseg"
 msgid "OAuth2 client information"
 msgstr "Podatki o odjemalcu OAuth2"
 
+msgid "OAuth2 tokens could not be deleted."
+msgstr ""
+
+msgid ""
+"OAuth2 tokens deleted. Affected users must authorize this connection "
+"again."
+msgstr ""
+
 msgid "OCT"
 msgstr "OKT"
 
@@ -11350,6 +11432,9 @@ msgstr "En ali več kontrolnikov za stolpčno vrtenje"
 
 msgid "One or many metrics to display"
 msgstr "Ena ali več mer za prikaz"
+
+msgid "One or more OAuth2 tokens were not found for this database."
+msgstr ""
 
 msgid "One or more annotation layers failed loading."
 msgstr "En ali več slojev z oznakami se ni naložil."
@@ -13738,6 +13823,9 @@ msgstr ""
 msgid "Search Metrics & Columns"
 msgstr "Iskanje mer in stolpcev"
 
+msgid "Search OAuth2 tokens"
+msgstr ""
+
 msgid "Search a channel by name, or paste a channel ID"
 msgstr "Poiščite kanal po imenu ali prilepite ID kanala"
 
@@ -13758,6 +13846,9 @@ msgstr "Iskanje po"
 
 msgid "Search by query text"
 msgstr "Išči po vsebini poizvedbe"
+
+msgid "Search by username, name, or email"
+msgstr ""
 
 msgid "Search calculated columns by name"
 msgstr "Poiščite izračunane stolpce po imenu"
@@ -14664,6 +14755,9 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+msgid "Show All/Invert buttons in legend"
+msgstr ""
 
 msgid "Show Bubbles"
 msgstr "Prikaži mehurčke"
@@ -18252,6 +18346,9 @@ msgstr "Oblika zapisa časa"
 msgid "Time grain"
 msgstr "Granulacija časa"
 
+msgid "Time grain applied to the temporal levels of the hierarchy."
+msgstr ""
+
 msgid "Time grain chart customization plugin"
 msgstr "Vtičnik za prilagajanje grafikona časovni zrnatosti"
 
@@ -18328,6 +18425,9 @@ msgstr "Napaka pretečenega časa"
 msgid "Timestamp format"
 msgstr "Oblika zapisa časovne značke"
 
+msgid "Timestamps are shown in server time."
+msgstr ""
+
 msgid "Timezone"
 msgstr "Časovni pas"
 
@@ -18388,6 +18488,9 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+msgid "Toggle to show/hide the \"All/Invert\" buttons in the legend."
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: cs, de, ja,
 # lv, ru, sk, sr, sr_Latn, tr, uk]
