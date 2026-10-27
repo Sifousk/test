@@ -54,7 +54,7 @@
     "react-map-gl": "^8.1.1",
     "underscore": "^1.13.7",
     "urijs": "^1.19.11",
-    "xss": "^1.0.15"
+    "xss": "^1.0.16"
   },
   "devDependencies": {
     "@types/mapbox__geojson-extent": "^1.0.3",
