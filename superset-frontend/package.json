@@ -201,7 +201,7 @@
     "mustache": "^4.2.0",
     "nanoid": "^5.1.11",
     "ol": "^10.9.0",
-    "pretty-ms": "^9.3.0",
+    "pretty-ms": "^10.0.0",
     "prop-types": "^15.8.1",
     "query-string": "9.3.1",
     "re-resizable": "^6.11.2",
