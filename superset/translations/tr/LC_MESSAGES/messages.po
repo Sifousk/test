@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Superset VERSION\n"
 "Report-Msgid-Bugs-To: avsarcoteli@gmail.com\n"
-"POT-Creation-Date: 2026-10-22 18:22-0700\n"
+"POT-Creation-Date: 2026-10-26 18:28+0000\n"
 "PO-Revision-Date: 2024-02-25 14:00+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: tr\n"
@@ -228,6 +228,11 @@ msgstr ""
 #, python-format
 msgid "%(count)s additional restricted %(label)s"
 msgstr ""
+
+#, python-format
+msgid "%(count)s dependent asset is archived."
+msgid_plural "%(count)s dependent assets are archived."
+msgstr[0] ""
 
 #, python-format
 msgid "%(dialect)s cannot be used as a data source for security reasons."
@@ -1012,6 +1017,12 @@ msgstr ""
 "Mum grafiği her dönem için açılış, kapanış, en yüksek ve en düşük "
 "değerleri gösterir. Genellikle finansal ve diğer zaman serisi aralık "
 "analizlerinde kullanılır."
+
+msgid ""
+"A chart on this dashboard or in this version was permanently deleted "
+"while the dashboard was being restored, so nothing was changed. Please "
+"try again."
+msgstr ""
 
 msgid "A comma separated list of columns that should be parsed as dates"
 msgstr "Tarih olarak ayrıştırılacak sütunların virgülle ayrılmış listesi"
@@ -2663,6 +2674,10 @@ msgid "Are you sure you want to delete %s?"
 msgstr "%s’i silmek istiyor musunuz?"
 
 #, python-format
+msgid "Are you sure you want to delete %s? This cannot be undone."
+msgstr ""
+
+#, python-format
 msgid "Are you sure you want to delete the selected %s?"
 msgstr "Seçilmiş   %s silmek istediğinizden emin misiniz?"
 
@@ -3811,15 +3826,6 @@ msgstr ""
 
 msgid "Charts"
 msgstr "Grafikler"
-
-#, python-format
-msgid ""
-"Charts built on the selected semantic view are not checked and will break"
-" if it is deleted."
-msgid_plural ""
-"Charts built on the %s selected semantic views are not checked and will "
-"break if they are deleted."
-msgstr[0] ""
 
 msgid "Charts could not be deleted."
 msgstr "Grafikler silinemedi."
@@ -5134,6 +5140,9 @@ msgstr "Özel SQL ad-hoc metrics bu veri setleri için etkinleştirilmemektedir"
 msgid "Custom SQL fields cannot be parsed as a single SQL statement."
 msgstr "Özel SQL alanları tek bir SQL ifadesi olarak ayrıştırılamaz."
 
+msgid "Custom SQL fields cannot be safely rewritten with RLS filters."
+msgstr ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: de, sr,
 # sr_Latn]
 #, fuzzy
@@ -6165,8 +6174,21 @@ msgstr ""
 
 msgid ""
 "Deleting this semantic layer also permanently deletes any semantic views "
-"it contains, and charts built on those views will stop working. The "
-"affected views could not be listed."
+"it contains. This cannot be undone. The affected views could not be "
+"listed."
+msgstr ""
+
+#, python-format
+msgid ""
+"Deletion is blocked by %s dependent assets (%s archived). Remove or "
+"repoint them before deleting."
+msgstr ""
+
+msgid ""
+"Deletion is blocked while any assets depend on the selected semantic "
+"views, including archived assets. Remove or repoint them first. Use "
+"Recently Archived to restore and repoint archived assets, or delete them "
+"permanently, or ask an admin for help."
 msgstr ""
 
 msgid "Delimited long & lat single column"
@@ -8542,6 +8564,11 @@ msgstr "Tatil için belirtilen tarih alın"
 
 msgid "Give access to multiple catalogs in a single database connection."
 msgstr "Tek bir veritabanı bağlantısında birden fazla kataloga erişmek."
+
+msgid ""
+"Go to Recently Archived to restore and repoint archived assets, or delete"
+" them permanently, or ask an admin for help."
+msgstr ""
 
 msgid "Go to Welcome Page"
 msgstr ""
@@ -11179,6 +11206,9 @@ msgstr "Bululmuş ifadeler bulunamadı"
 msgid "No saved metrics found"
 msgstr "Bullanmamış ölçümler bulunamadı"
 
+msgid "No saved version to preview"
+msgstr ""
+
 msgid "No selection modes are available for this control."
 msgstr ""
 
@@ -12934,6 +12964,9 @@ msgid "Remove item"
 msgstr "öğeyi kaldır"
 
 msgid "Remove notification method"
+msgstr ""
+
+msgid "Remove or repoint these assets before deleting the semantic source."
 msgstr ""
 
 msgid "Remove query from log"
@@ -14981,6 +15014,9 @@ msgstr "Show   %s entries"
 msgid "Show %s more change"
 msgid_plural "Show %s more changes"
 msgstr[0] ""
+
+msgid "Show All/Invert buttons in legend"
+msgstr ""
 
 msgid "Show Bubbles"
 msgstr "Göster Bubbles"
@@ -18408,7 +18444,9 @@ msgstr ""
 msgid "This section contains validation errors"
 msgstr "Bu bölüm doğrulama hataları içeriyor"
 
-msgid "This semantic layer has no dependent semantic views."
+msgid ""
+"This semantic layer has no dependent semantic views. This cannot be "
+"undone."
 msgstr ""
 
 msgid ""
@@ -18508,11 +18546,11 @@ msgstr "Bu işlem, %s abone için görevi iptal edecek (durduracak)."
 
 #, python-format
 msgid ""
-"This will also permanently delete its %s semantic view. Charts built on "
-"that view will stop working."
+"This will also permanently delete its %s semantic view. This cannot be "
+"undone."
 msgid_plural ""
-"This will also permanently delete its %s semantic views. Charts built on "
-"those views will stop working."
+"This will also permanently delete its %s semantic views. This cannot be "
+"undone."
 msgstr[0] ""
 
 msgid ""
@@ -18642,6 +18680,9 @@ msgstr "Zaman formatı"
 
 msgid "Time grain"
 msgstr "Zaman tahıl"
+
+msgid "Time grain applied to the temporal levels of the hierarchy."
+msgstr ""
 
 msgid "Time grain chart customization plugin"
 msgstr "Zaman tahıl grafiği özelleştirme eklenti"
@@ -18779,6 +18820,9 @@ msgstr ""
 msgid "To request access, reach out to the chart owner: %s."
 msgid_plural "To request access, reach out to the chart owners: %s."
 msgstr[0] ""
+
+msgid "Toggle to show/hide the \"All/Invert\" buttons in the legend."
+msgstr ""
 
 msgid "Token Request URI"
 msgstr "Hediye İste URIRIRI"

@@ -24,6 +24,7 @@ from collections import defaultdict
 from collections.abc import Hashable
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
+from functools import cache
 from typing import Any, Callable, cast, Optional, Union
 from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
 
@@ -2886,22 +2887,30 @@ class SqlaTable(
             filtered_query_obj = {
                 k: v for k, v in query_obj.items() if k in SQLA_QUERY_KEYS
             }
-            sqla_query = self.get_sqla_query(**cast(Any, filtered_query_obj))
+            sqla_query = self.get_sqla_query(
+                **cast(Any, filtered_query_obj), execute_prequeries=False
+            )
             extra_cache_keys += sqla_query.extra_cache_keys
 
+        resolve_catalog = cache(self.database.get_default_catalog)
+        default_schema = None
         # For virtual datasets, include RLS predicates in the cache key
         if self.is_virtual and self.sql:
-            default_schema = self.database.get_default_schema(self.catalog)
+            default_schema = self._get_rls_schema()
             rls_predicates = collect_rls_predicates_for_sql(
                 self.sql,
                 self.database,
                 self.catalog,
-                self.schema or default_schema or "",
+                default_schema,
                 exclude_dataset_id=self.id,
+                resolve_catalog=resolve_catalog,
             )
             # Add each predicate as a separate cache key component
             extra_cache_keys.extend(rls_predicates)
 
+        extra_cache_keys.extend(
+            self._get_query_rls_cache_keys(query_obj, default_schema, resolve_catalog)
+        )
         return list(set(extra_cache_keys))
 
     @property

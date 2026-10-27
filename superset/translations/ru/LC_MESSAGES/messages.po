@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-22 18:22-0700\n"
+"POT-Creation-Date: 2026-10-26 18:28+0000\n"
 "PO-Revision-Date: 2026-07-17 09:44+0100\n"
 "Last-Translator: Daniel Checheta\n"
 "Language: ru\n"
@@ -230,6 +230,13 @@ msgstr ""
 #, python-format
 msgid "%(count)s additional restricted %(label)s"
 msgstr ""
+
+#, python-format
+msgid "%(count)s dependent asset is archived."
+msgid_plural "%(count)s dependent assets are archived."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #, python-format
 msgid "%(dialect)s cannot be used as a data source for security reasons."
@@ -1035,6 +1042,12 @@ msgstr ""
 "Свечной график показывает цены открытия, закрытия, максимум и минимум за "
 "каждый период. Обычно используется для финансового и другого анализа "
 "диапазонов временных рядов."
+
+msgid ""
+"A chart on this dashboard or in this version was permanently deleted "
+"while the dashboard was being restored, so nothing was changed. Please "
+"try again."
+msgstr ""
 
 msgid "A comma separated list of columns that should be parsed as dates"
 msgstr ""
@@ -2599,6 +2612,10 @@ msgid "Are you sure you want to delete %s?"
 msgstr "Вы уверены, что хотите удалить %s?"
 
 #, python-format
+msgid "Are you sure you want to delete %s? This cannot be undone."
+msgstr ""
+
+#, python-format
 msgid "Are you sure you want to delete the selected %s?"
 msgstr "Вы уверены, что хотите удалить выбранные %s?"
 
@@ -3721,17 +3738,6 @@ msgstr ""
 
 msgid "Charts"
 msgstr "Диаграммы"
-
-#, python-format
-msgid ""
-"Charts built on the selected semantic view are not checked and will break"
-" if it is deleted."
-msgid_plural ""
-"Charts built on the %s selected semantic views are not checked and will "
-"break if they are deleted."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
 
 msgid "Charts could not be deleted."
 msgstr "Не удалось удалить диаграммы"
@@ -5003,6 +5009,9 @@ msgstr "Пользовательские ad-hoc меры SQL не разреше
 msgid "Custom SQL fields cannot be parsed as a single SQL statement."
 msgstr "Пользовательские поля SQL не могут быть разобраны как одна SQL-инструкция."
 
+msgid "Custom SQL fields cannot be safely rewritten with RLS filters."
+msgstr ""
+
 #, fuzzy
 msgid "Custom SQL fields cannot contain set operations."
 msgstr "Пользовательские поля SQL не могут содержать подзапросы"
@@ -6008,8 +6017,21 @@ msgstr ""
 
 msgid ""
 "Deleting this semantic layer also permanently deletes any semantic views "
-"it contains, and charts built on those views will stop working. The "
-"affected views could not be listed."
+"it contains. This cannot be undone. The affected views could not be "
+"listed."
+msgstr ""
+
+#, python-format
+msgid ""
+"Deletion is blocked by %s dependent assets (%s archived). Remove or "
+"repoint them before deleting."
+msgstr ""
+
+msgid ""
+"Deletion is blocked while any assets depend on the selected semantic "
+"views, including archived assets. Remove or repoint them first. Use "
+"Recently Archived to restore and repoint archived assets, or delete them "
+"permanently, or ask an admin for help."
 msgstr ""
 
 msgid "Delimited long & lat single column"
@@ -8231,6 +8253,11 @@ msgstr "Получает конкретную дату праздника"
 
 msgid "Give access to multiple catalogs in a single database connection."
 msgstr "Предоставить доступ к нескольким каталогам в рамках одного подключения"
+
+msgid ""
+"Go to Recently Archived to restore and repoint archived assets, or delete"
+" them permanently, or ask an admin for help."
+msgstr ""
 
 msgid "Go to Welcome Page"
 msgstr ""
@@ -10709,6 +10736,9 @@ msgstr "Сохраненные выражения не найдены"
 msgid "No saved metrics found"
 msgstr "Сохраненные меры не найдены"
 
+msgid "No saved version to preview"
+msgstr ""
+
 msgid "No selection modes are available for this control."
 msgstr ""
 
@@ -12383,6 +12413,9 @@ msgid "Remove item"
 msgstr "Удалить элемент"
 
 msgid "Remove notification method"
+msgstr ""
+
+msgid "Remove or repoint these assets before deleting the semantic source."
 msgstr ""
 
 msgid "Remove query from log"
@@ -14235,6 +14268,9 @@ msgid_plural "Show %s more changes"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+msgid "Show All/Invert buttons in legend"
+msgstr ""
 
 msgid "Show Bubbles"
 msgstr "Показать пузыри"
@@ -17501,7 +17537,9 @@ msgstr ""
 msgid "This section contains validation errors"
 msgstr "В этом разделе есть ошибки"
 
-msgid "This semantic layer has no dependent semantic views."
+msgid ""
+"This semantic layer has no dependent semantic views. This cannot be "
+"undone."
 msgstr ""
 
 msgid ""
@@ -17602,11 +17640,11 @@ msgstr "Это прервет (остановит) задачу для всех 
 
 #, python-format
 msgid ""
-"This will also permanently delete its %s semantic view. Charts built on "
-"that view will stop working."
+"This will also permanently delete its %s semantic view. This cannot be "
+"undone."
 msgid_plural ""
-"This will also permanently delete its %s semantic views. Charts built on "
-"those views will stop working."
+"This will also permanently delete its %s semantic views. This cannot be "
+"undone."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -17738,6 +17776,9 @@ msgstr "Формат даты/времени"
 msgid "Time grain"
 msgstr "Шаг времени"
 
+msgid "Time grain applied to the temporal levels of the hierarchy."
+msgstr ""
+
 msgid "Time grain chart customization plugin"
 msgstr "Плагин настройки диаграммы по шагу времени"
 
@@ -17868,6 +17909,9 @@ msgid_plural "To request access, reach out to the chart owners: %s."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+msgid "Toggle to show/hide the \"All/Invert\" buttons in the legend."
+msgstr ""
 
 msgid "Token Request URI"
 msgstr "URI запроса токена"

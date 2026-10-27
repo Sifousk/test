@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Superset VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-22 18:22-0700\n"
+"POT-Creation-Date: 2026-10-26 18:28+0000\n"
 "PO-Revision-Date: 2025-06-27 12:56+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ca\n"
@@ -243,6 +243,12 @@ msgstr ""
 #, python-format
 msgid "%(count)s additional restricted %(label)s"
 msgstr ""
+
+#, python-format
+msgid "%(count)s dependent asset is archived."
+msgid_plural "%(count)s dependent assets are archived."
+msgstr[0] ""
+msgstr[1] ""
 
 #, python-format
 msgid "%(dialect)s cannot be used as a data source for security reasons."
@@ -1034,6 +1040,12 @@ msgstr ""
 "Un gràfic de candlestick mostra els valors d'obertura, tancament, màxim i"
 " mínim de cada període. S'utilitza habitualment per a anàlisi financera i"
 " d'intervals de sèries temporals."
+
+msgid ""
+"A chart on this dashboard or in this version was permanently deleted "
+"while the dashboard was being restored, so nothing was changed. Please "
+"try again."
+msgstr ""
 
 #, fuzzy
 msgid "A comma separated list of columns that should be parsed as dates"
@@ -2714,6 +2726,10 @@ msgid "Are you sure you want to delete %s?"
 msgstr "Estàs segur que vols eliminar %s?"
 
 #, python-format
+msgid "Are you sure you want to delete %s? This cannot be undone."
+msgstr ""
+
+#, python-format
 msgid "Are you sure you want to delete the selected %s?"
 msgstr "Estàs segur que vols eliminar el %s seleccionat?"
 
@@ -3930,16 +3946,6 @@ msgstr ""
 
 msgid "Charts"
 msgstr "Gràfics"
-
-#, python-format
-msgid ""
-"Charts built on the selected semantic view are not checked and will break"
-" if it is deleted."
-msgid_plural ""
-"Charts built on the %s selected semantic views are not checked and will "
-"break if they are deleted."
-msgstr[0] ""
-msgstr[1] ""
 
 msgid "Charts could not be deleted."
 msgstr "Els gràfics no s'han pogut eliminar."
@@ -5298,6 +5304,9 @@ msgstr ""
 "Els camps SQL personalitzats no es poden analitzar com una única "
 "instrucció SQL."
 
+msgid "Custom SQL fields cannot be safely rewritten with RLS filters."
+msgstr ""
+
 #, fuzzy
 msgid "Custom SQL fields cannot contain set operations."
 msgstr "Els camps SQL personalitzats no poden contenir sub-consultes."
@@ -6379,8 +6388,21 @@ msgstr ""
 
 msgid ""
 "Deleting this semantic layer also permanently deletes any semantic views "
-"it contains, and charts built on those views will stop working. The "
-"affected views could not be listed."
+"it contains. This cannot be undone. The affected views could not be "
+"listed."
+msgstr ""
+
+#, python-format
+msgid ""
+"Deletion is blocked by %s dependent assets (%s archived). Remove or "
+"repoint them before deleting."
+msgstr ""
+
+msgid ""
+"Deletion is blocked while any assets depend on the selected semantic "
+"views, including archived assets. Remove or repoint them first. Use "
+"Recently Archived to restore and repoint archived assets, or delete them "
+"permanently, or ask an admin for help."
 msgstr ""
 
 msgid "Delimited long & lat single column"
@@ -8809,6 +8831,11 @@ msgstr "Obtenir la data especificada per al festiu"
 
 msgid "Give access to multiple catalogs in a single database connection."
 msgstr "Donar accés a múltiples catàlegs en una sola connexió de base de dades."
+
+msgid ""
+"Go to Recently Archived to restore and repoint archived assets, or delete"
+" them permanently, or ask an admin for help."
+msgstr ""
 
 msgid "Go to Welcome Page"
 msgstr ""
@@ -11456,6 +11483,9 @@ msgstr "Cap expressió desada trobada"
 msgid "No saved metrics found"
 msgstr "Cap mètrica desada trobada"
 
+msgid "No saved version to preview"
+msgstr ""
+
 msgid "No selection modes are available for this control."
 msgstr ""
 
@@ -13227,6 +13257,9 @@ msgid "Remove item"
 msgstr "Eliminar element"
 
 msgid "Remove notification method"
+msgstr ""
+
+msgid "Remove or repoint these assets before deleting the semantic source."
 msgstr ""
 
 msgid "Remove query from log"
@@ -15264,6 +15297,9 @@ msgid "Show %s more change"
 msgid_plural "Show %s more changes"
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "Show All/Invert buttons in legend"
+msgstr ""
 
 msgid "Show Bubbles"
 msgstr "Mostrar Bombolles"
@@ -18775,7 +18811,9 @@ msgstr ""
 msgid "This section contains validation errors"
 msgstr "Aquesta secció conté errors de validació"
 
-msgid "This semantic layer has no dependent semantic views."
+msgid ""
+"This semantic layer has no dependent semantic views. This cannot be "
+"undone."
 msgstr ""
 
 msgid ""
@@ -18881,11 +18919,11 @@ msgstr "Això interromprà (aturarà) la tasca per a tots els %s subscriptors."
 
 #, python-format
 msgid ""
-"This will also permanently delete its %s semantic view. Charts built on "
-"that view will stop working."
+"This will also permanently delete its %s semantic view. This cannot be "
+"undone."
 msgid_plural ""
-"This will also permanently delete its %s semantic views. Charts built on "
-"those views will stop working."
+"This will also permanently delete its %s semantic views. This cannot be "
+"undone."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -19021,6 +19059,9 @@ msgstr "Format de temps"
 
 msgid "Time grain"
 msgstr "Granularitat temporal"
+
+msgid "Time grain applied to the temporal levels of the hierarchy."
+msgstr ""
 
 #, fuzzy
 msgid "Time grain chart customization plugin"
@@ -19159,6 +19200,9 @@ msgid "To request access, reach out to the chart owner: %s."
 msgid_plural "To request access, reach out to the chart owners: %s."
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "Toggle to show/hide the \"All/Invert\" buttons in the legend."
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: cs, de, ja,
 # lv, ru, sk, sr, sr_Latn, tr, uk]

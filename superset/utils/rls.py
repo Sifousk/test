@@ -18,6 +18,7 @@
 from __future__ import annotations
 
 import hashlib
+from collections.abc import Callable
 from functools import partial
 from typing import Any, TYPE_CHECKING
 
@@ -52,6 +53,28 @@ def _get_cache_identity() -> str:
         ).hexdigest()
         return f"guest-{digest}"
     return str(get_user_id())
+
+
+def get_rls_schema(
+    database: Database,
+    catalog: str | None,
+    schema: str | None,
+    sql: str,
+    template_params: dict[str, Any] | None = None,
+) -> str:
+    """Qualify RLS tables with the execution schema, retaining unknown defaults.
+
+    Only dynamic-schema engines apply a query's schema to the connection. Other
+    engines discover it from connection parameters or the inspector. When discovery
+    returns no schema, keep the configured schema rather than losing its RLS rules.
+    """
+    if database.db_engine_spec.supports_dynamic_schema:
+        return schema or database.get_default_schema(catalog) or ""
+    return (
+        database.resolve_query_default_schema(sql, schema, catalog, template_params)
+        or schema
+        or ""
+    )
 
 
 def apply_rls(
@@ -289,6 +312,8 @@ def collect_rls_predicates_for_sql(
     catalog: str | None,
     schema: str,
     exclude_dataset_id: int | None = None,
+    *,
+    resolve_catalog: Callable[[], str | None] | None = None,
 ) -> list[str]:
     """
     Collect all RLS predicates that would be applied to tables in the given SQL.
@@ -303,6 +328,8 @@ def collect_rls_predicates_for_sql(
     :param exclude_dataset_id: Mirror of the same parameter on apply_rls — pass
         the virtual dataset's id so its self-match is excluded from the cache key
         (kept consistent with what's actually applied at query time).
+    :param resolve_catalog: Optional memoized resolver shared by cache-key collectors,
+        including engines that require a connection to discover the default catalog.
     :return: List of RLS predicate strings that would be applied
     """
     from superset.sql.parse import SQLScript
@@ -314,7 +341,7 @@ def collect_rls_predicates_for_sql(
             for statement in parsed_script.statements
             for table in statement.tables
         }
-        default_catalog = database.get_default_catalog()
+        default_catalog = (resolve_catalog or database.get_default_catalog)()
         return sorted(
             {
                 predicate

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Superset VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-22 18:22-0700\n"
+"POT-Creation-Date: 2026-10-26 18:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fi\n"
@@ -295,6 +295,12 @@ msgstr ""
 #, python-format
 msgid "%(count)s additional restricted %(label)s"
 msgstr ""
+
+#, python-format
+msgid "%(count)s dependent asset is archived."
+msgid_plural "%(count)s dependent assets are archived."
+msgstr[0] ""
+msgstr[1] ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, ja, lv, mi, nl, pl, pt_BR, ru, sk, sl, uk, zh, zh_TW]
@@ -1444,6 +1450,12 @@ msgstr ""
 "Kynttiläkaavio näyttää avaus-, päätös-, ylä- ja aliarvot kullekin "
 "jaksolle. Sitä käytetään yleisesti rahoitus- ja muuhun aikasarjojen "
 "vaihteluvälianalyysiin."
+
+msgid ""
+"A chart on this dashboard or in this version was permanently deleted "
+"while the dashboard was being restored, so nothing was changed. Please "
+"try again."
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: fr, ja, lv,
 # ru, sk, uk]
@@ -4083,6 +4095,10 @@ msgstr "Haluatko varmasti poistaa"
 msgid "Are you sure you want to delete %s?"
 msgstr "Haluatko varmasti poistaa %s?"
 
+#, python-format
+msgid "Are you sure you want to delete %s? This cannot be undone."
+msgstr ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, ja, lv, mi, nl, pl, pt_BR, ru, sk, sl, uk, zh, zh_TW]
 #, fuzzy, python-format
@@ -6007,16 +6023,6 @@ msgstr ""
 #, fuzzy
 msgid "Charts"
 msgstr "Kaaviot"
-
-#, python-format
-msgid ""
-"Charts built on the selected semantic view are not checked and will break"
-" if it is deleted."
-msgid_plural ""
-"Charts built on the %s selected semantic views are not checked and will "
-"break if they are deleted."
-msgstr[0] ""
-msgstr[1] ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, it, ja, ko, lv, mi, nl, pl, pt, pt_BR, ru, sk, sl, tr, uk,
@@ -8173,6 +8179,9 @@ msgstr "Mukautetut SQL-ad-hoc-mittarit eivät ole käytössä tässä tietojouko
 msgid "Custom SQL fields cannot be parsed as a single SQL statement."
 msgstr "Mukautettuja SQL-kenttiä ei voi jäsentää yhtenä SQL-lauseena."
 
+msgid "Custom SQL fields cannot be safely rewritten with RLS filters."
+msgstr ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, ja, lv, mi, nl, pl, pt_BR, ru, sk, sl, uk]
 #, fuzzy
@@ -9893,8 +9902,21 @@ msgstr ""
 
 msgid ""
 "Deleting this semantic layer also permanently deletes any semantic views "
-"it contains, and charts built on those views will stop working. The "
-"affected views could not be listed."
+"it contains. This cannot be undone. The affected views could not be "
+"listed."
+msgstr ""
+
+#, python-format
+msgid ""
+"Deletion is blocked by %s dependent assets (%s archived). Remove or "
+"repoint them before deleting."
+msgstr ""
+
+msgid ""
+"Deletion is blocked while any assets depend on the selected semantic "
+"views, including archived assets. Remove or repoint them first. Use "
+"Recently Archived to restore and repoint archived assets, or delete them "
+"permanently, or ask an admin for help."
 msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
@@ -13691,6 +13713,11 @@ msgstr "Hae tietty päivämäärä loman päiväksi."
 #, fuzzy
 msgid "Give access to multiple catalogs in a single database connection."
 msgstr "Anna pääsy useisiin luetteloihin yhdellä tietokantayhteydellä."
+
+msgid ""
+"Go to Recently Archived to restore and repoint archived assets, or delete"
+" them permanently, or ask an admin for help."
+msgstr ""
 
 msgid "Go to Welcome Page"
 msgstr ""
@@ -17949,6 +17976,9 @@ msgstr "Tallennettuja lausekkeita ei löydy"
 msgid "No saved metrics found"
 msgstr "Tallennettuja mittareita ei löydy"
 
+msgid "No saved version to preview"
+msgstr ""
+
 msgid "No selection modes are available for this control."
 msgstr ""
 
@@ -20831,6 +20861,9 @@ msgid "Remove item"
 msgstr "Poista kohde"
 
 msgid "Remove notification method"
+msgstr ""
+
+msgid "Remove or repoint these assets before deleting the semantic source."
 msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
@@ -23994,6 +24027,9 @@ msgid "Show %s more change"
 msgid_plural "Show %s more changes"
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "Show All/Invert buttons in legend"
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ar, ca, cs,
 # de, es, fa, fr, ja, lv, mi, nl, pt_BR, ru, sk, sl, uk, zh, zh_TW]
@@ -29047,7 +29083,9 @@ msgstr ""
 msgid "This section contains validation errors"
 msgstr "Tämä osio sisältää validointivirheitä"
 
-msgid "This semantic layer has no dependent semantic views."
+msgid ""
+"This semantic layer has no dependent semantic views. This cannot be "
+"undone."
 msgstr ""
 
 msgid ""
@@ -29181,11 +29219,11 @@ msgstr "Tämä keskeyttää (pysäyttää) tehtävän kaikille %s tilaajalle."
 
 #, python-format
 msgid ""
-"This will also permanently delete its %s semantic view. Charts built on "
-"that view will stop working."
+"This will also permanently delete its %s semantic view. This cannot be "
+"undone."
 msgid_plural ""
-"This will also permanently delete its %s semantic views. Charts built on "
-"those views will stop working."
+"This will also permanently delete its %s semantic views. This cannot be "
+"undone."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -29418,6 +29456,9 @@ msgstr "Aikamuoto"
 msgid "Time grain"
 msgstr "Aikayksikkö"
 
+msgid "Time grain applied to the temporal levels of the hierarchy."
+msgstr ""
+
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: ja, lv, ru,
 # uk]
 #, fuzzy
@@ -29646,6 +29687,9 @@ msgid "To request access, reach out to the chart owner: %s."
 msgid_plural "To request access, reach out to the chart owners: %s."
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "Toggle to show/hide the \"All/Invert\" buttons in the legend."
+msgstr ""
 
 # Machine-translated via backfill_po.py (claude-sonnet-4-6) [refs: cs, ja, lv,
 # ru, sk, uk]
