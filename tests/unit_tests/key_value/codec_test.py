@@ -15,6 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 from contextlib import nullcontext
+from datetime import datetime
 from typing import Any
 
 import pytest
@@ -42,12 +43,24 @@ from superset.key_value.types import (
             {"foo": [1, 2, 3]},
         ),
         (
+            # `superset.utils.json`'s default serializer (`base_json_conv`)
+            # converts bare sets to lists rather than raising, unlike stdlib
+            # `json`; this no longer raises now that the codec uses it.
             {1, 2, 3},
-            KeyValueCodecEncodeException(),
+            [1, 2, 3],
         ),
         (
             object(),
             KeyValueCodecEncodeException(),
+        ),
+        (
+            # Regression test: stdlib `json` can't serialize `datetime` values
+            # and raises `TypeError`, which this codec maps to
+            # `KeyValueCodecEncodeException`. The codec uses
+            # `superset.utils.json`, whose `dumps` serializes datetimes to
+            # ISO 8601 strings, so this must round-trip without raising.
+            {"foo": datetime(2024, 1, 1, 12, 0, 0)},
+            {"foo": "2024-01-01T12:00:00"},
         ),
     ],
 )
@@ -134,3 +147,9 @@ def test_binary_codec_round_trips():
     raw = b"\x00\x01binary\xffdata"
     assert codec.decode(raw) == raw
     assert codec.encode(codec.decode(raw)) == raw
+
+
+def test_json_codec_rejects_bytes():
+    """Raw bytes must raise rather than be silently stringified."""
+    with pytest.raises(KeyValueCodecEncodeException):
+        JsonKeyValueCodec().encode(b"hello")  # type: ignore[arg-type]

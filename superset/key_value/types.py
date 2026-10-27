@@ -16,7 +16,6 @@
 # under the License.
 from __future__ import annotations
 
-import json
 import pickle
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
@@ -29,6 +28,7 @@ from superset.key_value.exceptions import (
     KeyValueCodecDecodeException,
     KeyValueCodecEncodeException,
 )
+from superset.utils import json
 from superset.utils.backports import StrEnum
 
 if TYPE_CHECKING:
@@ -115,6 +115,9 @@ class KeyValueCodec(ABC):
 
 class JsonKeyValueCodec(KeyValueCodec):
     def encode(self, value: dict[Any, Any]) -> bytes:
+        # JSON has no binary type; raw bytes must not be silently stringified
+        if isinstance(value, (bytes, bytearray)):
+            raise KeyValueCodecEncodeException("Cannot JSON-encode a bytes value")
         try:
             return bytes(json.dumps(value), encoding="utf-8")
         except TypeError as ex:
