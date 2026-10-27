@@ -7931,6 +7931,10 @@ msgstr ""
 msgid "Invalid time range boundary for resample: %(value)s"
 msgstr ""
 
+#, python-format
+msgid "Invalid time range for %(column)s: %(message)s"
+msgstr ""
+
 msgid "Inverse"
 msgstr ""
 
